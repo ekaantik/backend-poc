@@ -1,0 +1,37 @@
+server:
+  port: 8001
+  servlet:
+    context-path: '/ecard'
+
+#logging.level.root: DEBUG
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecard
+    username: ecard
+    password: ecard@123
+  jpa:
+    hibernate.ddl-auto: validate
+    hibernate.default_schema: public
+    show-sql: false
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    properties.hibernate.format_sql: true
+    properties.hibernate.jdbc.time_zone: UTC
+    properties.org.hibernate.envers.audit_table_prefix: AUD_
+    properties.org.hibernate.envers.audit_table_suffix:
+#  quartz:
+#    properties:
+#      org:
+#        quartz:
+#          jobStore:
+#            driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+#            isClustered: 'true'
+#          scheduler:
+#            instanceId: AUTO
+#    job-store-type: jdbc
+#    overwrite-existing-jobs: 'true'
+
+#  liquibase:
+#    enabled: true
+#    change-log: classpath:changelog/db.changelog-master.xml
+
