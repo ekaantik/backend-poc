@@ -1,40 +1,39 @@
 package com.poc.ecard;
 
 
+import com.poc.ecard.User;
+import com.poc.ecard.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("v1/users")
-
+@RequestMapping("/users")
 public class UserOps {
-
     @Autowired
-    private UserServicesImpl userServices;
+    private UserServices userServices;
 
+    //Mapping to getUserProfileData
+    //@GetMapping
+    //public ResponseEntity<String> findCustomers(@PathVariable String userId)
+    //{
+    //    String response=userServices.getUserProfileData(userId);
+    //    return ResponseEntity.ok(response);
+    //}
 
-//    @Operation(summary = "Find all Customers for a Distributor/ Admin")
-    @GetMapping
-//    @PreAuthorize("hasAnyAuthority('ADMIN','DISTRIBUTOR_ADMIN')")
-    public ResponseEntity<String> findCustomers(@RequestParam("userId") String userId) {
-//        String response = userServices.getUserProfileData(userId);
-        return ResponseEntity.ok("working");
-    }
-
-
+    //Mapping to addUser
     @PostMapping("/add")
-//    @PreAuthorize("hasAnyAuthority('ADMIN','DISTRIBUTOR_ADMIN')")
-    public ResponseEntity<User> addUser(@RequestBody User user) {
-        User userResponse = userServices.addUser(user);
-        return ResponseEntity.ok(userResponse);
+    public ResponseEntity<User> addCustomer(@RequestBody User user)
+    {
+        return ResponseEntity.ok(userServices.addUser(user));
     }
 
-
-//    @PostMapping("/find_common_contacts")
-//    public ResponseEntity<User> findCommonContacts(@RequestBody User user) {
-//        User userResponse = userServices.findCommonContacts(user);
-//        return ResponseEntity.ok(userResponse);
-//    }
-
+    //Mapping to get
+    @GetMapping("/find_common_contacts")
+    public ResponseEntity<User> find_Common_Contacts(@RequestBody User user)
+    {
+        return ResponseEntity.ok(userServices.findCommonContacts(user));
+    }
 }
