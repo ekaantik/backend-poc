@@ -1,15 +1,15 @@
 server:
   port: 8001
-  servlet:
-    context-path: '/ecard'
+
 
 #logging.level.root: DEBUG
 
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ecard
-    username: ecard
-    password: ecard@123
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
   jpa:
     hibernate.ddl-auto: validate
     hibernate.default_schema: public
