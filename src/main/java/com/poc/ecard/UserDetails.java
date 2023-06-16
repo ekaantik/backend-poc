@@ -18,7 +18,7 @@ import lombok.Setter;
 public class UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO
+    @GeneratedValue(strategy = GenerationType.AUTO) // AUTO
     private Long id;
 
     private String user_num;

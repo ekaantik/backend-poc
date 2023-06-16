@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="22dde0c1-ec1a-42d1-b5f1-e548c4934b64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/EcardApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/EcardApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserDetailsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/poc/ecard/UserServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/EcardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/EcardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetailsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RH3v2J0gBvByB70uH0ZJ8SqcSU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/meet/Desktop/MEET_POC/beckend-poc"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="beckend-poc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="beckend-poc" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22dde0c1-ec1a-42d1-b5f1-e548c4934b64" name="Changes" comment="" />
+      <created>1686893406523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686893406523</updated>
+    </task>
+    <servers />
+  </component>
+</project>
