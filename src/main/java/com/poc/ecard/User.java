@@ -1,25 +1,16 @@
 package com.poc.ecard;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class User {
+
     private String userNum;
-
     private String userNumToSearch;
-
     private String response;
-
-    private List<String> phoneBookNum ;
-
-    private List<String> commonContacts ;
+    private List<String> phoneBookNum;
+    private List<String> commonContacts;
 
 }
