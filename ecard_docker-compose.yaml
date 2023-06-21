@@ -1,9 +1,5 @@
 version: '3.8'
 
-volumes:
-  postgres_data:
-      driver: local
-
 services:
   postgres-ecard:
       container_name: postgres-ecard
@@ -21,16 +17,17 @@ services:
 #        interval: 10s
 #        timeout: 3s
 #        retries: 3
-#
-#  cache:
-#    container_name: redis
-#    image: redis:7.0-alpine
-#    restart: always
-#    ports:
-#      - '6379:6379'
-#    command: redis-server --save 20 1 --loglevel warning --requirepass password
-#    volumes:
-#      - cache:/data
+  ecard-poc:
+    image: ecard-poc
+    container_name: ecard-poc
+    environment:
+      POSTGRES_DATABASE_HOST: postgres-ecard
+#    env_file:
+#      - src/main/resources/local.env
+    ports:
+      - '8002:8002'
+    depends_on:
+      - postgres-ecard
 
 # Persisted data across application restarts
 volumes:
