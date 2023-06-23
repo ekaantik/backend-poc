@@ -31,7 +31,7 @@ public class UserOps {
     }
 
     //Mapping to get
-    @GetMapping("/find_common_contacts")
+    @PostMapping("/find_common_contacts")
     public ResponseEntity<User> find_Common_Contacts(@RequestBody User user)
     {
         return ResponseEntity.ok(userServices.findCommonContacts(user));
