@@ -25,7 +25,7 @@ services:
 #    env_file:
 #      - src/main/resources/local.env
     ports:
-      - '8002:8002'
+      - 8002:8002
     depends_on:
       - postgres-ecard
 
