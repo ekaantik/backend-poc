@@ -1,15 +1,16 @@
 server:
-  port: 8002
-
+  port: 8001
+  servlet:
+    context-path: '/ecard'
 
 #logging.level.root: DEBUG
 
 spring:
   datasource:
 #    url: jdbc:postgresql://${POSTGRES_DATABASE_HOST}:5432/ecard
-    url: jdbc:postgresql://postgres-ecard:5432/ecard
-    username: ecard
-    password: ecard@123
+    url: jdbc:postgresql://localhost:5432/ecard
+    username: postgres
+    password: root
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate.ddl-auto: update
@@ -18,8 +19,8 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
     properties.hibernate.format_sql: true
     properties.hibernate.jdbc.time_zone: UTC
-#    properties.org.hibernate.envers.audit_table_prefix: AUD_
-#    properties.org.hibernate.envers.audit_table_suffix:
+    properties.org.hibernate.envers.audit_table_prefix: AUD_
+    properties.org.hibernate.envers.audit_table_suffix:
 #  quartz:
 #    properties:
 #      org:
