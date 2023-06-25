@@ -12,5 +12,6 @@ public class User {
     private String response;
     private List<String> phoneBookNum;
     private List<String> commonContacts;
-
+    private String qrCodePath;
+    private byte[] byteCode;
 }
