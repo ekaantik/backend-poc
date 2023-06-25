@@ -1,5 +1,9 @@
 version: '3.8'
 
+volumes:
+  postgres_data:
+      driver: local
+
 services:
   postgres-ecard:
       container_name: postgres-ecard
@@ -17,17 +21,17 @@ services:
 #        interval: 10s
 #        timeout: 3s
 #        retries: 3
-  ecard-poc:
-    image: ecard-poc
-    container_name: ecard-poc
-    environment:
-      POSTGRES_DATABASE_HOST: postgres-ecard
+#  ecard-poc:
+#    image: ecard-poc
+#    container_name: ecard-poc
+#    environment:
+#      POSTGRES_DATABASE_HOST: postgres-ecard
 #    env_file:
 #      - src/main/resources/local.env
-    ports:
-      - 8002:8002
-    depends_on:
-      - postgres-ecard
+#    ports:
+#      - 8002:8002
+#    depends_on:
+#      - postgres-ecard
 
 # Persisted data across application restarts
 volumes:

@@ -1,8 +1,7 @@
 package com.poc.ecard;
 
 
-import com.poc.ecard.User;
-import com.poc.ecard.UserServices;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,30 +9,62 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("v1/users")
+@Slf4j
 public class UserOps {
+
     @Autowired
-    private UserServices userServices;
+    private UserServicesImpl userServices;
 
-    //Mapping to getUserProfileData
-    //@GetMapping
-    //public ResponseEntity<String> findCustomers(@PathVariable String userId)
-    //{
-    //    String response=userServices.getUserProfileData(userId);
-    //    return ResponseEntity.ok(response);
-    //}
-
-    //Mapping to addUser
-    @PostMapping("/add")
-    public ResponseEntity<User> addCustomer(@RequestBody User user)
+    //GetMapping to get all users
+    @GetMapping("/allUsers")
+    public ResponseEntity<List<User>> getAllUsers()
     {
-        return ResponseEntity.ok(userServices.addUser(user));
+        List<User> users=null;
+        users = userServices.getAllUsers();
+        return ResponseEntity.ok(users);
     }
 
-    //Mapping to get
-    @PostMapping("/find_common_contacts")
-    public ResponseEntity<User> find_Common_Contacts(@RequestBody User user)
+    //GetMapping to getByUserNum
+    @GetMapping("/getByUserNum/{no}")
+    public ResponseEntity<User> getByUserNum(@PathVariable("no") String userNum)
     {
-        return ResponseEntity.ok(userServices.findCommonContacts(user));
+        User user=userServices.getUserByUser_num(userNum);
+        return ResponseEntity.ok(user);
     }
+
+    //PostMapping to create User
+    @PostMapping ("/add")
+    public ResponseEntity<User> addUser(@RequestBody User user)
+    {
+        User userResponse=null;
+        userResponse=userServices.addUser(user);
+        return ResponseEntity.ok(userResponse);
+    }
+
+    //Put Mapping to update User
+    @PutMapping("/update/{no}")
+    public ResponseEntity<User> updateUser(@PathVariable("no") String userNum,@RequestBody User user)
+    {
+        User userResponse=null;
+        userResponse=userServices.updateUser(userNum,user);
+        return ResponseEntity.ok(userResponse);
+    }
+
+    //Delete Mapping to delete user
+    @DeleteMapping ("/deleteUser/{no}")
+    public ResponseEntity<User> deleteUser(@PathVariable("no") String userNum)
+    {
+        User deletedUser=null;
+        deletedUser=userServices.deleteUser(userNum);
+        return ResponseEntity.ok(deletedUser);
+    }
+
+    //Get Mapping to find common contacts of two users
+    @GetMapping ("/find_common_contacts")
+    public ResponseEntity<User> findCommonContacts(@RequestBody User user) {
+        User userResponse = userServices.findCommonContacts(user);
+        return ResponseEntity.ok(userResponse);
+    }
+
 }
