@@ -1,4 +1,4 @@
-package com.poc.ecard;
+package com.poc.ecard.userops.repo;
 
 
 import com.poc.ecard.UserDetails;

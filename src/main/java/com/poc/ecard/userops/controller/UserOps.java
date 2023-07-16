@@ -1,13 +1,11 @@
-package com.poc.ecard;
+package com.poc.ecard.userops.controller;
 
 
 import com.poc.ecard.User;
-import com.poc.ecard.UserServices;
+import com.poc.ecard.userops.service.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -24,10 +22,11 @@ public class UserOps {
     //}
 
     //Mapping to addUser
-    @PostMapping("/add")
-    public ResponseEntity<User> addCustomer(@RequestBody User user)
+    @PostMapping("/register")
+    public ResponseEntity<User> registerUser(@RequestBody User user)
     {
-        return ResponseEntity.ok(userServices.addUser(user));
+        User response = userServices.addUser(user);
+        return ResponseEntity.ok(response);
     }
 
     //Mapping to get

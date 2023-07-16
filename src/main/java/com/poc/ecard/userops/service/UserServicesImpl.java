@@ -1,7 +1,7 @@
-package com.poc.ecard;
+package com.poc.ecard.userops.service;
 
 import com.poc.ecard.User;
-import com.poc.ecard.UserDetailsRepository;
+import com.poc.ecard.userops.repo.UserDetailsRepository;
 import com.poc.ecard.UserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +23,6 @@ public class UserServicesImpl implements UserServices {
     //}
     @Override
     public User addUser(User user) {
-
         try{
             for (int i=0;i<user.getPhoneBookNum().size();i++)
             {
@@ -32,7 +31,6 @@ public class UserServicesImpl implements UserServices {
             }
         }
         catch(Exception e){
-
             System.out.println(e.getMessage());
         }
         String response="user "+ user.getUserNum()+" successfully added to the system";
