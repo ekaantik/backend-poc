@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  postgres-ecard:
+      container_name: postgres-ecard
+      image: postgres:15.2      
+      volumes:
+        - postgres_ecard_data:/var/lib/postgresql/data
+      environment:
+        POSTGRES_DB: ecard
+        POSTGRES_USER: ecard
+        POSTGRES_PASSWORD: ecard@123
+      ports:
+        - 5432:5432
+#      healthcheck:
+#        test: ["CMD-SHELL", "pg_isready -d keycloak -U keycloak"]
+#        interval: 10s
+#        timeout: 3s
+#        retries: 3
+#
+#  keycloak:
+#    image: quay.io/keycloak/keycloak:22.0.1
+#    environment:
+#      KEYCLOAK_ADMIN: admin
+#      KEYCLOAK_ADMIN_PASSWORD: admin
+#      #      KEYCLOAK_ADMIN: admin
+#      #      KEYCLOAK_ADMIN_PASSWORD: admin
+#      #      KC_DB_URL: jdbc:postgresql://postgres-ecard:5432/ecardkc
+#      #      KC_DB_USERNAME: ecard
+#      #      KC_DB_PASSWORD: ecard@123
+#      #      KC_DB: postgres
+#      #      KC_HOSTNAME: localhost
+#
+#    command:
+#      - start-dev
+#      #      - --import-realm
+#      #    volumes:
+#      #      - /home/keycloak/realm.json:/opt/keycloak/data/import/realm.json
+#
+#      # Uncomment the line b  elow if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
+#    #      JDBC_PARAMS: "ssl=true"
+#    #    entrypoint: /opt/keycloak/bin/kc.sh start
+#    ports:
+#      - '8081:8080'
+#  #    depends_on:
+#  #      - postgres-ecard
+  ecard-poc:
+    image: ecard-poc
+    container_name: ecard-poc
+    environment:
+      POSTGRES_DATABASE_HOST: postgres-ecard
+#    env_file:
+#      - src/main/resources/local.env
+    ports:
+      - 8002:8002
+    depends_on:
+      - postgres-ecard
+
+# Persisted data across application restarts
+volumes:
+  postgres_ecard_data: {}
+#  cache:
+#    driver: local
+
+

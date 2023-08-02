@@ -9,7 +9,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import retrofit2.HttpException;
+//import retrofit2.HttpException;
 
 import javax.validation.ConstraintViolationException;
 import java.util.List;
@@ -41,9 +41,9 @@ public abstract class BaseGlobalExceptionHandler extends ResponseEntityException
         return ResponseEntity.status(ex.getStatus()).body(exceptionResponseDto);
     }
 
-    @ExceptionHandler(HttpException.class)
-    public ResponseEntity<String> handleHttpException(HttpException ex) {
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(ex.getMessage());
-    }
+//    @ExceptionHandler(HttpException.class)
+//    public ResponseEntity<String> handleHttpException(HttpException ex) {
+//        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(ex.getMessage());
+//    }
 
 }
