@@ -10,6 +10,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GenerateOtpResponse {
-
+    private OtpStatus status;
     private String message;
 }

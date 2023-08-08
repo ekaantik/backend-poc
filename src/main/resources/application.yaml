@@ -19,6 +19,13 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
     properties.hibernate.format_sql: true
     properties.hibernate.jdbc.time_zone: UTC
+
+
+twilio:
+  account_sid: AC9b73c9aeef67da94082542f3629cfcc9
+  auth_token: bf9f80ee9706b026f534c39c8d8230f8
+  trial_number: +17402453676
+
 #    properties.org.hibernate.envers.audit_table_prefix: AUD_
 #    properties.org.hibernate.envers.audit_table_suffix:
 #  quartz:
