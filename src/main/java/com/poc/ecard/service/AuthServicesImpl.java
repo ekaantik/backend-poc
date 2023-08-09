@@ -16,7 +16,7 @@ import java.util.Random;
 
 @Service
 @Slf4j
-public class AuthServicesImpl implements AuthServices {
+public abstract class AuthServicesImpl implements AuthServices {
 
     @Autowired
     private TwilioConfig twilioConfig;
@@ -30,7 +30,7 @@ public class AuthServicesImpl implements AuthServices {
         try {
             PhoneNumber to = new PhoneNumber(generateOtpReq.getUserMobileNumber());
             PhoneNumber from = new PhoneNumber(twilioConfig.getTrialNumber());
-            String otp = generateOTP();
+            String otp = new DecimalFormat("000000").format(new Random().nextInt(999999));
             String otpMessage = "Dear Customer , Your OTP is ##" + otp + "##. Use this Passcode to complete your transaction. Thank You.";
             Message message = Message
                     .creator(to, from,
@@ -45,18 +45,21 @@ public class AuthServicesImpl implements AuthServices {
         return Mono.just(generateOtpResponse);
     }
 
+    /*@Override
     public String generateOTP() {
         return new DecimalFormat("000000")
                 .format(new Random().nextInt(999999));
-    }
+    }*/
 
     @Override
-    public Mono<String> validateOTP(String userInputOtp, String userMobileNumber) {
+    public Mono<String> validateOTP(String userInputOtp, String userMobileNumber)
+    {
         if (userInputOtp.equals(otpMap.get(userMobileNumber))) {
             otpMap.remove(userMobileNumber,userInputOtp);
             return Mono.just("Valid OTP please proceed with your transaction !");
-        } else {
-            return Mono.error(new IllegalArgumentException("Invalid otp please retry !"));
+        }
+        else {
+            return Mono.just("Invalid otp please retry !");
         }
     }
 }

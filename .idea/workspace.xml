@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/GenerateOtpReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/GenerateOtpReq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
@@ -25,7 +28,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ecard" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -56,7 +64,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/meet/Desktop/OTP/backend-poc"
+    "last_opened_file_path": "/home/meet/Desktop/OTP/backend-poc",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">

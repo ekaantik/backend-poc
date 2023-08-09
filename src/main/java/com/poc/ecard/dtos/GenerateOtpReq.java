@@ -12,4 +12,5 @@ import lombok.Setter;
 public class GenerateOtpReq {
 
     private String userMobileNumber;
+    private String oneTimePassword;
 }

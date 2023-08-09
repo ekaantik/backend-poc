@@ -7,7 +7,6 @@ import com.poc.ecard.dtos.VerifyOtpResponse;
 import lombok.Data;
 import reactor.core.publisher.Mono;
 
-@Data
 public interface AuthServices {
     Mono<GenerateOtpResponse> sendOTPForPasswordReset(GenerateOtpReq generateOtpReq);
 
@@ -16,5 +15,9 @@ public interface AuthServices {
     VerifyOtpResponse verifyOtp(VerifyOtpReq verifyOtpReq);
 
 
+    String generateOTP();
+
     Mono<String> validateOTP(String userInputOtp, String userName);
+
+    String validateOTP(VerifyOtpReq verifyOtpReq);
 }

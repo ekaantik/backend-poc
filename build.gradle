@@ -32,8 +32,9 @@ dependencies {
 	implementation group: 'com.twilio.sdk', name: 'twilio', version: '9.9.1'
 	// https://mvnrepository.com/artifact/io.projectreactor/reactor-core
 	implementation 'io.projectreactor:reactor-core:3.5.8'
-	// https://mvnrepository.com/artifact/org.springframework/spring-webflux
-	implementation 'org.springframework:spring-webflux:6.0.11'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.1.2'
+
 
 
 
