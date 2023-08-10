@@ -1,9 +1,10 @@
 package com.poc.ecard.dtos.validations;
 
+import jakarta.validation.ConstraintViolation;
 import lombok.Getter;
 import org.springframework.validation.FieldError;
 
-import javax.validation.ConstraintViolation;
+//import javax.validation.ConstraintViolation;
 
 @Getter
 public class ValidationErrorDto {

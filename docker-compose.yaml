@@ -44,17 +44,17 @@ services:
 #      - '8081:8080'
 #  #    depends_on:
 #  #      - postgres-ecard
-  ecard-poc:
-    image: ecard-poc
-    container_name: ecard-poc
-    environment:
-      POSTGRES_DATABASE_HOST: postgres-ecard
-#    env_file:
-#      - src/main/resources/local.env
-    ports:
-      - 8002:8002
-    depends_on:
-      - postgres-ecard
+#  ecard-poc:
+#    image: ecard-poc
+#    container_name: ecard-poc
+#    environment:
+#      POSTGRES_DATABASE_HOST: postgres-ecard
+##    env_file:
+##      - src/main/resources/local.env
+#    ports:
+#      - 8002:8002
+#    depends_on:
+#      - postgres-ecard
 
 # Persisted data across application restarts
 volumes:

@@ -11,7 +11,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 //import retrofit2.HttpException;
 
-import javax.validation.ConstraintViolationException;
+//import javax.validation.ConstraintViolationException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,14 +26,14 @@ public abstract class BaseGlobalExceptionHandler extends ResponseEntityException
         return ResponseEntity.badRequest().body(errors);
     }
 
-    @ExceptionHandler(ConstraintViolationException.class)
-    public ResponseEntity<List<ValidationErrorDto>> handleConstraintViolationException(
-            ConstraintViolationException ex) {
-        List<ValidationErrorDto> errors = ex.getConstraintViolations().stream()
-                .map(ValidationErrorDto::new)
-                .collect(Collectors.toList());
-        return ResponseEntity.badRequest().body(errors);
-    }
+//    @ExceptionHandler(ConstraintViolationException.class)
+//    public ResponseEntity<List<ValidationErrorDto>> handleConstraintViolationException(
+//            ConstraintViolationException ex) {
+//        List<ValidationErrorDto> errors = ex.getConstraintViolations().stream()
+//                .map(ValidationErrorDto::new)
+//                .collect(Collectors.toList());
+//        return ResponseEntity.badRequest().body(errors);
+//    }
 
     @ExceptionHandler(EcardException.class)
     public ResponseEntity<ExceptionResponseDto> handleDigiWalletException(EcardException ex) {

@@ -1,7 +1,9 @@
 package com.poc.ecard.service;
 
 import com.poc.ecard.config.TwilioConfig;
-import com.poc.ecard.dtos.*;
+import com.poc.ecard.dtos.GenerateOtpReq;
+import com.poc.ecard.dtos.GenerateOtpResponse;
+import com.poc.ecard.dtos.OtpStatus;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 import lombok.extern.slf4j.Slf4j;
@@ -16,26 +18,28 @@ import java.util.Random;
 
 @Service
 @Slf4j
-public abstract class AuthServicesImpl implements AuthServices {
+public class AuthServicesImpl  {//implements AuthServices
 
     @Autowired
     private TwilioConfig twilioConfig;
 
     Map<String, String> otpMap = new HashMap<>();
 
-    @Override
-    public Mono<GenerateOtpResponse> sendOTPForPasswordReset(GenerateOtpReq generateOtpReq) {
 
+    public Mono<GenerateOtpResponse> sendOTPForPasswordReset(GenerateOtpReq generateOtpReq) {
+        log.info("method sendOTPForPasswordReset .... ");
         GenerateOtpResponse generateOtpResponse = null;
         try {
             PhoneNumber to = new PhoneNumber(generateOtpReq.getUserMobileNumber());
             PhoneNumber from = new PhoneNumber(twilioConfig.getTrialNumber());
             String otp = new DecimalFormat("000000").format(new Random().nextInt(999999));
             String otpMessage = "Dear Customer , Your OTP is ##" + otp + "##. Use this Passcode to complete your transaction. Thank You.";
+            log.info("otpMessage : {} to phone number {} frp, phone number {}",otpMessage, to,from);
             Message message = Message
                     .creator(to, from,
                             otpMessage)
                     .create();
+            log.info(" message : {} ",message);
             otpMap.put(generateOtpReq.getUserMobileNumber(), otp);
             generateOtpResponse = new GenerateOtpResponse(OtpStatus.DELIVERED, otpMessage);
         }
@@ -51,15 +55,5 @@ public abstract class AuthServicesImpl implements AuthServices {
                 .format(new Random().nextInt(999999));
     }*/
 
-    @Override
-    public Mono<String> validateOTP(String userInputOtp, String userMobileNumber)
-    {
-        if (userInputOtp.equals(otpMap.get(userMobileNumber))) {
-            otpMap.remove(userMobileNumber,userInputOtp);
-            return Mono.just("Valid OTP please proceed with your transaction !");
-        }
-        else {
-            return Mono.just("Invalid otp please retry !");
-        }
-    }
+
 }
