@@ -10,6 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class VerifyOtpResponse {
-
+    private String status;
     private String message;
+    private String jwtToken;
 }

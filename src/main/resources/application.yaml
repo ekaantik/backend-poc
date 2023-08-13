@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8083
   #  ${ECARD_SERVICE_PROVIDER_PORT}
   servlet:
     context-path: '/ecard'
@@ -9,8 +9,8 @@ spring:
   datasource:
 #    url: jdbc:postgresql://${POSTGRES_DATABASE_HOST}:5432/ecard
     url: jdbc:postgresql://localhost:5432/ecard
-    username: postgres
-    password: root
+    username: ecard
+    password: ecard@123
     driverClassName: org.postgresql.Driver
   jpa:
     hibernate.ddl-auto: update
@@ -23,7 +23,7 @@ spring:
 
 twilio:
   account_sid: AC9b73c9aeef67da94082542f3629cfcc9
-  auth_token: bf9f80ee9706b026f534c39c8d8230f8
+  auth_token: a29968b1e2a954ccfded74b2565d56a5
   trial_number: +17402453676
 
 #    properties.org.hibernate.envers.audit_table_prefix: AUD_
@@ -44,3 +44,6 @@ twilio:
 #    enabled: true
 #    change-log: classpath:changelog/db.changelog-master.xml
 
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351

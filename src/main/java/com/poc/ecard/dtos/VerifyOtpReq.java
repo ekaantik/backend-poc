@@ -11,6 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class VerifyOtpReq {
 
-    private String userMobileNumber;
+    private String userMobileNum;
     private String otp;
 }

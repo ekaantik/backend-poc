@@ -11,6 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class GenerateOtpReq {
 
-    private String userMobileNumber;
-    private String oneTimePassword;
+    private String userMobileNum;
+//    private String oneTimePassword;
 }

@@ -1,21 +1,22 @@
-package com.poc.ecard.service;
+package com.poc.ecard.service.impl;
 
 
 import com.poc.ecard.dtos.ContactsBookReq;
 import com.poc.ecard.dtos.ContactsBookResponse;
 import com.poc.ecard.dtos.FindCommonContactsReq;
 import com.poc.ecard.dtos.FindCommonContactsResponse;
-import com.poc.ecard.repository.UserProfileRepository;
+import com.poc.ecard.repository.UserRepo;
+import com.poc.ecard.service.UserServices;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class UserProfileServicesImpl implements UserServices{
+public class UserProfileServicesImpl implements UserServices {
 
     @Autowired
-    UserProfileRepository userProfileRepository;
+    UserRepo userRepo;
 
 
     @Override
