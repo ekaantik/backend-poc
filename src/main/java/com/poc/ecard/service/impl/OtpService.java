@@ -50,8 +50,9 @@ public class OtpService {
     }
 
     private String getRandomOTP(String phoneNo) {
-        String otp =  new DecimalFormat("000000")
-                .format(new Random().nextInt(999999));
+//        String otp =  new DecimalFormat("000000")
+//                .format(new Random().nextInt(999999));
+        String otp =  "8881212";
         otpCache.put(phoneNo,otp);
         return otp;
     }

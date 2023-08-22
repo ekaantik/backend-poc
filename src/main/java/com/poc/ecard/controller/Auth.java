@@ -32,4 +32,6 @@ public class Auth {
         VerifyOtpResponse response = authServices.verifyOtp(verifyOtpReq);
         return ResponseEntity.ok(response);
     }
+
+
 }

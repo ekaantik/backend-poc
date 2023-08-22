@@ -6,8 +6,7 @@ ENV PROJECT_HOME /usr/share/poc
 RUN mkdir $PROJECT_HOME
 
 #Copy App Jar file
-ENV JAR_FILE ecard-0.0.1-SNAPSHOT.jar
-COPY build/libs/$JAR_FILE $PROJECT_HOME/
+COPY build/libs/ecard-0.0.1-SNAPSHOT.jar $PROJECT_HOME/
 
 #Copy resources files
 ENV RESOURCES src/main/resources
