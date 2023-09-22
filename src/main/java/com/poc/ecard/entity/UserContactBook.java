@@ -19,8 +19,19 @@ public class UserContactBook { //extends BaseUuidEntity
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    private String userProfileId; // id column of user profile table
-    private String contactNumber;
+    private String userMobileNum; // id column of user profile table
+//    private String contactNumber;
+    private String firstName;
+    private String lastName;
+    private String currentOccupation;
+    private String linkedinProfileLink;
 
-
+    public UserContactBook(String userMobileNumber, String firstName, String lastName, String currentOccupation, String linkedinProfileLink) {
+        this.userMobileNum = userMobileNumber;
+//        this.contactNumber = contactNumber;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.currentOccupation = currentOccupation;
+        this.linkedinProfileLink = linkedinProfileLink;
+    }
 }

@@ -23,6 +23,7 @@ public class Auth {
 
     @PostMapping("/generate_otp")
     public ResponseEntity<GenerateOtpResponse> generateOtp(@RequestBody GenerateOtpReq generateOtpReq) {
+
        GenerateOtpResponse generateOtpResponse = authServices.generateOtp(generateOtpReq);
        return ResponseEntity.ok(generateOtpResponse);
     }

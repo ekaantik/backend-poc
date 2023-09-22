@@ -1,18 +1,18 @@
 package com.poc.ecard.dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
+@ToString
 public class ContactsBookReq {
     private String userMobileNumber;
+    private String firstName;
+    private String lastName;
+    private String currentOccupation;
+    private String linkedinProfileLink;
+
 
     private List<String> contactList;
 
