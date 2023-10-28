@@ -9,7 +9,7 @@ spring:
   datasource:
 #    url: jdbc:postgresql://${POSTGRES_DATABASE_HOST}:5432/ecard
 #    url: jdbc:postgresql://postgres-ecard:5432/ecard
-    url: jdbc:postgresql://localhost:5432/ecard
+    url: jdbc:postgresql://localhost:5433/ecard
     username: ecard
     password: ecard@123
     driverClassName: org.postgresql.Driver

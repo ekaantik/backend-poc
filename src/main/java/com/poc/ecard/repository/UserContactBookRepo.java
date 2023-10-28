@@ -1,6 +1,7 @@
 package com.poc.ecard.repository;
 
 
+import com.poc.ecard.dtos.ContactsBookReq;
 import com.poc.ecard.entity.UserContactBook;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -18,10 +19,11 @@ public interface UserContactBookRepo extends JpaRepository<UserContactBook, Long
 //    @Modifying
 @Transactional
 @Modifying
-void deleteByUserMobileNum(String userMobileNum );
+void deleteByUserMobileNum(String userMobileNum);
 
     Optional<UserContactBook> findByUserMobileNum(String userMobileNum );
     List<UserContactBook> findByFirstName(String firstName);
+
 
 
 //    @Query("delete from user_contact_book f where f.user_mobile_num=:num and f.contact_number=:number")

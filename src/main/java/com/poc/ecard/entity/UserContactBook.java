@@ -26,6 +26,11 @@ public class UserContactBook { //extends BaseUuidEntity
     private String currentOccupation;
     private String linkedinProfileLink;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id",nullable = false)
+    private User user;
+
+
     public UserContactBook(String userMobileNumber, String firstName, String lastName, String currentOccupation, String linkedinProfileLink) {
         this.userMobileNum = userMobileNumber;
 //        this.contactNumber = contactNumber;

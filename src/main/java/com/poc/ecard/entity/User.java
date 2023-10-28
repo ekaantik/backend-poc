@@ -6,6 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
 
@@ -24,6 +25,17 @@ public class User implements UserDetails { // extends BaseUuidEntity
     @Column(name="mobile_num", unique = true)
     private String mobileNum;
 
+    @Column(name="first_name")
+    private String firstname;
+
+    @Column(name="last_name")
+    private String lastname;
+
+    @Column(name="city")
+    private String city;
+
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    private List<UserContactBook> contactList;
 //    private String password; // otp in our case
 
     @Enumerated(EnumType.STRING)
