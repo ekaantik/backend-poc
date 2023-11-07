@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/UserReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/utils/UserContactUtils.java" afterDir="false" />
+    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="Api : user add,user update,user delete,contact add,contact delete,contact update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/utils/QRutil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/ContactsBookReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/ContactsBookReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/UserReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/UserReq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/UserContactBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/UserContactBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserContactBookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserContactBookRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/ContactBookServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/ContactBookServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/impl/ContactBookServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/impl/ContactBookServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/impl/UserServiceImpl.java" afterDir="false" />
@@ -35,6 +29,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -98,7 +95,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;user__phonebook&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/meet/Desktop/OTP/backend-poc&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/qr-generator-example-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,7 +108,29 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.EcardApplication">
+    <configuration name="backend-poc [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="EcardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ecard.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.poc.ecard.EcardApplication" />
@@ -119,6 +138,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.backend-poc [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -135,12 +159,35 @@
       <workItem from="1698398069534" duration="2354000" />
       <workItem from="1698412558057" duration="1304000" />
       <workItem from="1698429244361" duration="399000" />
-      <workItem from="1698470228455" duration="4800000" />
+      <workItem from="1698470228455" duration="5872000" />
+      <workItem from="1698476228769" duration="49000" />
+      <workItem from="1698506940223" duration="45000" />
+      <workItem from="1698556346450" duration="11000" />
+      <workItem from="1698680781486" duration="1352000" />
+      <workItem from="1699259712835" duration="6825000" />
+      <workItem from="1699267461979" duration="25000" />
+      <workItem from="1699267516088" duration="7613000" />
+      <workItem from="1699298660626" duration="248000" />
+      <workItem from="1699333366869" duration="10850000" />
+      <workItem from="1699348559972" duration="724000" />
     </task>
+    <task id="LOCAL-00001" summary="Api : user add,user update,user delete,contact add,contact delete,contact update">
+      <option name="closed" value="true" />
+      <created>1698475508065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698475508065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Api : user add,user update,user delete,contact add,contact delete,contact update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api : user add,user update,user delete,contact add,contact delete,contact update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

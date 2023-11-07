@@ -34,6 +34,16 @@ public class User implements UserDetails { // extends BaseUuidEntity
     @Column(name="city")
     private String city;
 
+    @Column(name="qr_code_image_path")
+    private String qr_code_image_path;
+
+    @Column(name="byte_code")
+    private byte[] byte_code;
+
+    @Column(name="profile_img")
+    private String profile_img;
+
+
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     private List<UserContactBook> contactList;
 //    private String password; // otp in our case
@@ -76,4 +86,5 @@ public class User implements UserDetails { // extends BaseUuidEntity
     public boolean isEnabled() {
         return true;
     }
+
 }

@@ -20,6 +20,11 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
     properties.hibernate.format_sql: true
     properties.hibernate.jdbc.time_zone: UTC
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
 
 
 twilio:

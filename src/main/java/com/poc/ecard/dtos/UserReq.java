@@ -14,4 +14,8 @@ public class UserReq {
     private String city;
 
     private List<ContactsBookReq> contactList;
+
+    private String qrCodePath;
+    private byte[] byteCode;
+    private String Profileimag;
 }

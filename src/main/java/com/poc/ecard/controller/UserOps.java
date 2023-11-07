@@ -7,9 +7,13 @@ import com.poc.ecard.service.impl.ContactBookServicesImpl;
 import com.poc.ecard.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -60,11 +64,16 @@ public class UserOps {
 ////        FindCommonContactsResponse response = userServices.findCommonContacts(findCommonContactsReq);
 //        return ResponseEntity.ok(null);
 //    }
-
     @PostMapping("/add_user")
-    public ResponseEntity<ContactsBookResponse> uploadUser(@RequestBody UserReq userReq) {
+    public ResponseEntity<ContactsBookResponse> uploadUser(@RequestBody UserReq userReq,@RequestParam("image")MultipartFile image) throws IOException{
         ContactsBookResponse response = userService.uploaduser(userReq);
         return ResponseEntity.ok(response);
+    }
+    private String path = "C:\\Users\\rohit\\IdeaProjects\\backend-poc\\src\\main\\resources\\ProfilePictures";
+    @PostMapping("/upload")
+    public ResponseEntity<String> uploadImage(@RequestParam("image")MultipartFile image) throws IOException {
+        String filename = this.userService.uploadImage(path,image);
+        return ResponseEntity.ok(filename);
     }
 
     @DeleteMapping("/remove_user")
@@ -78,6 +87,5 @@ public class UserOps {
         ContactsBookResponse response = userService.updateuser(userReq);
         return ResponseEntity.ok(response);
     }
-
 
 }
