@@ -1,0 +1,74 @@
+#server:
+#  port: 8084
+#  servlet:
+#    context-path: '/infra'
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rohitvadhiya631@gmail.com
+    password: jswpajixmsmpjwsn
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+#
+#  jpa:
+#    hibernate.ddl-auto: update
+#    hibernate.default_schema: public
+#    show-sql: false
+#    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+#    properties.hibernate.format_sql: true
+#    properties.hibernate.jdbc.time_zone: UTC
+#
+#token:
+#  signing:
+#    key: u5kLX1yVaiArajokYDFkGiFNTGzQbYJt6uQ7QtcI
+##    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+#
+#amazon:
+#  s3:
+#    bucket:
+#      logo:
+#        asset:
+#          path: backend/rogue/stocks_assets
+#      domain:
+#        url: https://test_bucket.s3.test_regiion.amazonaws.com
+#      name: myapp-assets-prod
+#    region: ap-south-1
+#    access:
+#      key: AKIAYN25WEGB2X4N2WFM
+#    secret:
+#      key: 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
+#
+#
+#influxdb:
+#  url: https://us-east-1-1.aws.cloud2.influxdata.com/
+#  bucket:
+#    oneminute: 1min
+#    fifteenminute: 15min
+#    hourly: 1hour
+#    daily: 1day
+##  peroneday:
+##    bucket:
+##      name: per_one_day_price_update_dev
+##  peroneminute:
+##    bucket:
+##      name: 1min
+##  org: Infrared
+#  org: Test_Infrared
+##  token: npPIdHcqUKlMv4n-N4P0vI5eMAmUEzC04_xteUH_Li6WiTfR_p_TYLmZ9ciEvhv7RnQmXFkXHHafLmQ4N0DfIQ==
+##  token: AbYLDv8e-81G1-fnynw2-bABudkadtXX1xiMYrldFiy0AnIIVEexfs3SntMo6dGs4modg8_WXLrvulLjORf9kA==
+#  token: pGO2nYpiIswQ3ZBHzgNikZBVFtO7mJh54UwFSMbNySmAgomUZdjH70Yxl6CTQJTtFumlnVFDUfMcexhpiKV6WA==
+##  perfiveminute:
+##    bucket:
+##      name: per_five_min_price_update_dev
+#
+#logging:
+#  level:
+#    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+#
