@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/java/example/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/java/example/mail/EmailSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/java/example/mail/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/java/example/mail/Mailreq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification/src/main/java/example/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification/src/main/java/example/mail/EmailSenderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification/src/main/java/example/mail/MailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification/src/main/java/example/mail/Mailreq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notification/src/main/resources/application.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -34,6 +38,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,16 +60,23 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.backend-poc [:EcardApplication.main()].executor": "Run",
+    "Gradle.backend-poc.executor": "Run",
     "Gradle.backend-poc:Notification [:Notification:Notification.main()].executor": "Run",
+    "Gradle.backend-poc:contacts [:contacts:EcardApplication.main()].executor": "Run",
+    "Gradle.backend-poc:notification [:notification:Notification.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Module",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/rohit/IdeaProjects/backend-poc/Notification/src/main/java"
+    "last_opened_file_path": "/home/rohit/IdeaProjects/backend-poc/notification/src/main/resources"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notification/src/main/resources" />
+      <recent name="$PROJECT_DIR$/notification/src/main/java" />
+      <recent name="$PROJECT_DIR$/contacts/src/main/resources" />
+      <recent name="$PROJECT_DIR$/contacts/src/main/java" />
       <recent name="$PROJECT_DIR$/Notification/src/main/java" />
     </key>
   </component>
@@ -74,6 +90,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ecard.notification" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ecard.notification" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

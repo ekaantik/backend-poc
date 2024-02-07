@@ -1,4 +1,4 @@
-package example.mail;
+package com.example.mail;
 
 import lombok.Builder;
 

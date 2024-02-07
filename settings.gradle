@@ -1,3 +1,4 @@
 rootProject.name = 'ecard'
-include 'Notification'
+include 'contacts'
+include 'notification'
 
