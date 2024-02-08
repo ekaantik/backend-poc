@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServices.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="- Meet Branch Commit of 1st Checkhout" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +47,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.backend-poc [:EcardApplication.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "qrcode__meet",
@@ -71,6 +64,19 @@
       <option name="presentableId" value="Default" />
       <updated>1687439594049</updated>
     </task>
+    <task id="LOCAL-00001" summary="- Meet Branch Commit of 1st Checkhout">
+      <option name="closed" value="true" />
+      <created>1707373909474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707373909474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Meet Branch Commit of 1st Checkhout" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Meet Branch Commit of 1st Checkhout" />
   </component>
 </project>
