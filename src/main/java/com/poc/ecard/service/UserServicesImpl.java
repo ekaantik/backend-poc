@@ -1,4 +1,4 @@
-package com.poc.ecard;
+package com.poc.ecard.service;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
@@ -6,9 +6,13 @@ import com.google.zxing.client.j2se.MatrixToImageConfig;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.*;
-import com.poc.ecard.User;
-import com.poc.ecard.UserDetailsRepository;
-import com.poc.ecard.UserDetails;
+import com.poc.ecard.dtos.User;
+import com.poc.ecard.repository.UserDetailsRepository;
+import com.poc.ecard.entity.UserDetails;
+import com.poc.ecard.dtos.ContactsBookReq;
+import com.poc.ecard.dtos.ContactsBookResponse;
+import com.poc.ecard.dtos.FindCommonContactsReq;
+import com.poc.ecard.dtos.FindCommonContactsResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +23,19 @@ import java.nio.file.Path;
 import java.util.List;
 
 @Service
-public class UserServicesImpl implements UserServices{
+public class UserServicesImpl implements UserServices {
     @Autowired
     private UserDetailsRepository userDetailsRepository;
+
+    @Override
+    public ContactsBookResponse uploadContacts(ContactsBookReq contactsBookReq) {
+        return null;
+    }
+
+    @Override
+    public FindCommonContactsResponse findCommonContacts(FindCommonContactsReq findCommonContactsReq) {
+        return null;
+    }
 
     @Override
     public List<UserDetails> getUser() {

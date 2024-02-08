@@ -6,15 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecard_docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,19 +45,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RYuykxm0px0GXqfUUreK16zau0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/meet/Desktop/pooc/beckend-poc&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;shared-indexes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "qrcode__meet",
+    "last_opened_file_path": "/home/meet/Desktop/pooc/beckend-poc",
+    "settings.editor.selected.configurable": "shared-indexes"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
