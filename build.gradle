@@ -24,6 +24,18 @@ dependencies {
 	implementation 'com.google.zxing:core:3.5.1'
 	implementation 'com.google.zxing:javase:3.5.1'
 
+	//Spring Boot Validation
+	implementation "org.springframework.boot:spring-boot-starter-validation:3.1.0"
+
+	//Jakarta Bean Validation
+	implementation "javax.validation:validation-api:2.0.1.Final"
+
+	//Retrofit
+//	implementation "com.squareup.retrofit2:retrofit:2.9.0"
+//	implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+//	implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
