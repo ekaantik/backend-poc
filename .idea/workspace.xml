@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="- Meet Branch Commit of 1st Checkhout" />
+    <list default="true" id="5f510119-0e10-4f9f-b43d-4cfd8e120396" name="Changes" comment="- Meet Branch Commit of 1st Checkhout">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/EcardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/EcardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/constants/DbConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/constants/DbConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/constants/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/constants/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/constants/ZoneConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/constants/ZoneConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/controller/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/controller/UserOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/controller/UserOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/ContactsBookReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/ContactsBookReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/ContactsBookResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/ContactsBookResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/FindCommonContactsReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/FindCommonContactsReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/FindCommonContactsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/FindCommonContactsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/GenerateOtpReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/GenerateOtpReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/GenerateOtpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/GenerateOtpResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/VerifyOtpReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/VerifyOtpReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/VerifyOtpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/VerifyOtpResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/validations/ExceptionMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/validations/ExceptionMessageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/validations/ExceptionResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/validations/ExceptionResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/dtos/validations/ValidationErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/dtos/validations/ValidationErrorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/UserContactBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/entity/UserContactBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/entity/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/entity/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/base/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/entity/base/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/entity/base/BaseUuidEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/entity/base/BaseUuidEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/AlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/AlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/BadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/BaseGlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/BaseGlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/EcardException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/EcardException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/ExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/InternalServerErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/InternalServerErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/exception/base/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/exception/base/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/repository/UserDetailsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/UserProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/repository/UserProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/base/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/repository/base/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/repository/base/BaseUuidRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/repository/base/BaseUuidRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/service/AuthServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/AuthServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/service/AuthServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/service/UserProfileServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/service/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/service/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/service/UserServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/utils/MapperUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/utils/MapperUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poc/ecard/utils/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/src/main/java/com/poc/ecard/utils/MathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/local.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qrcode/a-QRCODE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qrcode/b-QRCODE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qrcode/c-QRCODE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/poc/ecard/EcardApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +72,41 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/contacts">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/notifications">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ecard" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ecard" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ecard" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ecard" type="f1a62948:ProjectNode" />
+                <item name="notifications" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -32,6 +118,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "rohitvadhiya"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d23aac99-f8a2-4876-959e-bf6b9250c3ac" />
+        <option name="url" value="https://github.com/ekaantik/backend-poc.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,13 +148,149 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.backend-poc [:EcardApplication.main()].executor": "Run",
+    "Gradle.backend-poc [build].executor": "Run",
+    "Gradle.backend-poc [clean].executor": "Run",
+    "Gradle.backend-poc [jar].executor": "Run",
+    "Gradle.backend-poc:contacts [:contacts:EcardApplication.main()].executor": "Run",
+    "Gradle.backend-poc:contacts [build].executor": "Run",
+    "Gradle.backend-poc:contacts [clean].executor": "Run",
+    "Gradle.backend-poc:contacts [jar].executor": "Run",
+    "Gradle.backend-poc:notifications [build].executor": "Run",
+    "Gradle.backend-poc:notifications [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "qrcode__meet",
-    "last_opened_file_path": "/home/meet/Desktop/pooc/beckend-poc",
+    "git-widget-placeholder": "Module1",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/rohit/IdeaProjects/backend-poc/contacts/src/main/java",
     "settings.editor.selected.configurable": "shared-indexes"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/contacts/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="backend-poc [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend-poc [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend-poc:contacts [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/contacts" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend-poc:notifications [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notifications" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend-poc:notifications [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notifications" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.backend-poc:notifications [clean]" />
+        <item itemvalue="Gradle.backend-poc:notifications [build]" />
+        <item itemvalue="Gradle.backend-poc [clean]" />
+        <item itemvalue="Gradle.backend-poc [build]" />
+        <item itemvalue="Gradle.backend-poc:contacts [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

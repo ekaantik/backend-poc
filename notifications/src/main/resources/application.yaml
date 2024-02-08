@@ -1,0 +1,17 @@
+#server:
+#  port: 8084
+#  servlet:
+#    context-path: '/infra'
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rohitvadhiya631@gmail.com
+    password: jswpajixmsmpjwsn
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
